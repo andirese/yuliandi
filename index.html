@@ -57,24 +57,24 @@
     </div>
 
     <script src="script.js"></script>
-    <div class="daun-container"></div>
+    <div class="daun.png-container"></div>
 <script>
-const container = document.querySelector('.daun-container');
+const container = document.querySelector('.daun.png-container');
 
-function buatdaun() {
-    const daun = document.createElement('div');
-    daun.classList.add('daun.png');
-    daun.style.left = Math.random() * window.innerWidth + 'px';
-    daun.style.animationDuration = (Math.random() * 3 + 2) + 's';
-    daun.style.opacity = Math.random();
-    container.appendChild(daun);
+function buatdaun.png() {
+    const daun.png = document.createElement('div');
+    daun.png.classList.add('daun.png');
+    daun.png.style.left = Math.random() * window.innerWidth + 'px';
+    daun.png.style.animationDuration = (Math.random() * 3 + 2) + 's';
+    daun.png.style.opacity = Math.random();
+    container.appendChild(daun.png);
 
     setTimeout(() => {
-        daun.remove();
+        daun.png.remove();
     }, 5000);
 }
 
-setInterval(buatdaun, 300);
+setInterval(buatdaun.png, 300);
 </script>
 </body>
 </html>
