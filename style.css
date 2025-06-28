@@ -1,13 +1,19 @@
+/* Style dasar */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
+  background-color: #fdf8f5;
 }
 
+/* Bagian Landing Page */
 .landing {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .background {
@@ -15,18 +21,19 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: 1;
 }
 
 .overlay {
   position: relative;
   z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  backdrop-filter: blur(4px);
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
 .foto-pengantin {
@@ -39,38 +46,49 @@ body {
 }
 
 h1 {
-  font-size: 32px;
-  margin: 10px;
+  font-size: 36px;
+  color: #6d4c41;
+  margin: 10px 0;
+}
+
+p {
+  color: #555;
+  margin: 5px 0;
 }
 
 .tamu {
   font-weight: bold;
 }
 
+/* Tombol Buka Undangan */
 button {
   margin-top: 20px;
-  padding: 12px 24px;
-  background-color: #A44;
+  padding: 12px 30px;
+  background-color: #9c27b0;
   color: white;
   border: none;
   border-radius: 25px;
   cursor: pointer;
   font-size: 16px;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #722;
+  background-color: #7b1fa2;
 }
 
+/* Bagian Isi Undangan */
 #content {
   display: none;
-  padding: 20px;
+  padding: 30px;
+  background-color: #fff8f5;
 }
 
 #content.active {
   display: block;
 }
 
+/* Navigasi */
 nav.nav {
   display: flex;
   gap: 20px;
@@ -80,6 +98,50 @@ nav.nav {
 
 nav a {
   text-decoration: none;
-  color: #A44;
+  color: #9c27b0;
   font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #7b1fa2;
+}
+
+/* Section Detail */
+section {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+section h2 {
+  color: #6d4c41;
+}
+
+section img {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .overlay {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .foto-pengantin {
+    width: 140px;
+    height: 140px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
 }
