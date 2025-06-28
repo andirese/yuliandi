@@ -1,11 +1,64 @@
 body {
-  background-color: #f9f7f1;
+  background-image: url('https://images.unsplash.com/photo-1523285367489-d38aec03b7f3?auto=format&fit=crop&w=1400&q=80');
+  background-size: cover;
+  background-position: center;
   font-family: 'Segoe UI', sans-serif;
   color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 20px;
   text-align: center;
-  padding: 50px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
 h1 {
-  color: #2e7d32;
+  color: #2e7d32;
+}
+
+h2 {
+  color: #6d4c41;
+}
+
+.invitation {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.details, .countdown, .gallery, .confirmation, .closing {
+  margin-top: 30px;
+}
+
+.gallery img {
+  width: 180px;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+#timer {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+.confirmation a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.confirmation a:hover {
+  background-color: #128C7E;
 }
