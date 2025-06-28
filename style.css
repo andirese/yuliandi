@@ -1,64 +1,85 @@
 body {
-  background-image: url('https://images.unsplash.com/photo-1523285367489-d38aec03b7f3?auto=format&fit=crop&w=1400&q=80');
-  background-size: cover;
-  background-position: center;
-  font-family: 'Segoe UI', sans-serif;
-  color: #333;
   margin: 0;
-  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.container {
-  background-color: rgba(255, 255, 255, 0.9);
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 30px;
-  border-radius: 20px;
-  text-align: center;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  backdrop-filter: blur(4px);
+  background-color: rgba(255,255,255,0.5);
+}
+
+.foto-pengantin {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 h1 {
-  color: #2e7d32;
-}
-
-h2 {
-  color: #6d4c41;
-}
-
-.invitation {
-  margin: 20px 0;
-  font-size: 18px;
-}
-
-.details, .countdown, .gallery, .confirmation, .closing {
-  margin-top: 30px;
-}
-
-.gallery img {
-  width: 180px;
-  height: auto;
+  font-size: 32px;
   margin: 10px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
-#timer {
-  font-size: 24px;
+.tamu {
   font-weight: bold;
-  color: #d32f2f;
 }
 
-.confirmation a {
-  display: inline-block;
+button {
+  margin-top: 20px;
   padding: 12px 24px;
-  background-color: #25D366;
+  background-color: #A44;
   color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.confirmation a:hover {
-  background-color: #128C7E;
+button:hover {
+  background-color: #722;
+}
+
+#content {
+  display: none;
+  padding: 20px;
+}
+
+#content.active {
+  display: block;
+}
+
+nav.nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #A44;
+  font-weight: bold;
 }
