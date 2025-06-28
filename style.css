@@ -63,7 +63,7 @@ img {
     margin: 10px;
     border-radius: 10px;
 }
-.daun-container {
+.daun.png-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -74,7 +74,7 @@ img {
     z-index: 5;
 }
 
-.daun {
+.daun.png {
     position: absolute;
     top: -50px;
     width: 30px;
