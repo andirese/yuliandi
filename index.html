@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -13,7 +12,7 @@
         <h1>Wedding Invitation</h1>
         <h2>Yuliani</h2>
         <p>Kepada Bapak/Ibu/Saudara/i</p>
-        <p><b>Agus Badri</b></p>
+        <p><b>Agus Setiawan</b></p>
         <button onclick="bukaUndangan()">Buka Undangan</button>
     </div>
 
@@ -48,9 +47,14 @@
         </div>
     </section>
 
-    <audio autoplay loop>
-        <source src="sound2.mp3" type="audio/mpeg">
+    <!-- Musik -->
+    <audio id="bgm" loop>
+        <source src="musik.mp3" type="audio/mpeg">
     </audio>
+
+    <div class="music-control">
+        <button onclick="toggleMusic()">🎵 Play/Pause Musik</button>
+    </div>
 
     <script src="script.js"></script>
 </body>
