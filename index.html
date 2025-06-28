@@ -57,5 +57,24 @@
     </div>
 
     <script src="script.js"></script>
+    <div class="bunga-container"></div>
+<script>
+const container = document.querySelector('.bunga-container');
+
+function buatBunga() {
+    const bunga = document.createElement('div');
+    bunga.classList.add('bunga');
+    bunga.style.left = Math.random() * window.innerWidth + 'px';
+    bunga.style.animationDuration = (Math.random() * 3 + 2) + 's';
+    bunga.style.opacity = Math.random();
+    container.appendChild(bunga);
+
+    setTimeout(() => {
+        bunga.remove();
+    }, 5000);
+}
+
+setInterval(buatBunga, 300);
+</script>
 </body>
 </html>
