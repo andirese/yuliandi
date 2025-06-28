@@ -63,7 +63,7 @@ img {
     margin: 10px;
     border-radius: 10px;
 }
-.bunga-container {
+.daun-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -74,12 +74,12 @@ img {
     z-index: 5;
 }
 
-.bunga {
+.daun {
     position: absolute;
     top: -50px;
     width: 30px;
     height: 30px;
-    background-image: url('https://i.ibb.co/whhsmL0/bunga.png');
+    background-image: url('daun');
     background-size: cover;
     opacity: 0.8;
     animation: jatuh linear;
