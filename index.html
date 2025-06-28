@@ -10,7 +10,7 @@
     <div class="opening">
         <img src="foto aresequeen.jpg" alt="Foto Pengantin" class="photo">
         <h1>Wedding Invitation</h1>
-        <h2>Yuliani</h2>
+        <h2>Yuliani & Andi</h2>
         <p>Kepada Bapak/Ibu/Saudara/i</p>
         <p><b>Agus Setiawan</b></p>
         <button onclick="bukaUndangan()">Buka Undangan</button>
@@ -57,24 +57,24 @@
     </div>
 
     <script src="script.js"></script>
-    <div class="bunga-container"></div>
+    <div class="daun-container"></div>
 <script>
-const container = document.querySelector('.bunga-container');
+const container = document.querySelector('.daun-container');
 
-function buatBunga() {
-    const bunga = document.createElement('div');
-    bunga.classList.add('bunga');
-    bunga.style.left = Math.random() * window.innerWidth + 'px';
-    bunga.style.animationDuration = (Math.random() * 3 + 2) + 's';
-    bunga.style.opacity = Math.random();
-    container.appendChild(bunga);
+function buatdaun() {
+    const daun = document.createElement('div');
+    daun.classList.add('daun');
+    daun.style.left = Math.random() * window.innerWidth + 'px';
+    daun.style.animationDuration = (Math.random() * 3 + 2) + 's';
+    daun.style.opacity = Math.random();
+    container.appendChild(daun);
 
     setTimeout(() => {
-        bunga.remove();
+        daun.remove();
     }, 5000);
 }
 
-setInterval(buatBunga, 300);
+setInterval(buatdaun, 300);
 </script>
 </body>
 </html>
