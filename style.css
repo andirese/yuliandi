@@ -79,7 +79,7 @@ img {
     top: -50px;
     width: 30px;
     height: 30px;
-    background-image: url('daun');
+    background-image: url('daun.png');
     background-size: cover;
     opacity: 0.8;
     animation: jatuh linear;
